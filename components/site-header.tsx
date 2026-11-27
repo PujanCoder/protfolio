@@ -11,6 +11,8 @@ const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
+  { href: "/quantum-lab", label: "Quantum" },
+  { href: "/activity", label: "Activity" },
   { href: "/achievements", label: "Achievements" },
   { href: "/skills", label: "Skills" },
   { href: "/education", label: "Education" },

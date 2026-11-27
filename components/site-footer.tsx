@@ -6,6 +6,8 @@ import { profile } from "@/lib/profile";
 const pages = [
   { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
+  { href: "/quantum-lab", label: "Quantum Lab" },
+  { href: "/activity", label: "Activity" },
   { href: "/achievements", label: "Achievements" },
   { href: "/skills", label: "Skills" },
   { href: "/education", label: "Education" },

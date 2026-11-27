@@ -104,6 +104,25 @@ export default async function ProjectPage({
         <div className="container-page">
           <MetricGrid metrics={project.metrics} />
 
+          {project.lab ? (
+            <Link
+              href={project.lab.href}
+              className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50/60 px-5 py-4 transition-colors hover:border-emerald-400"
+            >
+              <div>
+                <p className="font-mono text-[9.5px] uppercase tracking-[0.14em] text-emerald-700">
+                  Interactive lab
+                </p>
+                <p className="mt-1 text-[13.5px] font-medium text-forest">{project.lab.label}</p>
+                <p className="mt-1 text-[11.5px] leading-relaxed text-quiet">{project.lab.note}</p>
+              </div>
+              <span className="inline-flex items-center gap-1.5 rounded-lg bg-forest px-3 py-2 text-[11.5px] font-medium text-white">
+                Open lab
+                <ArrowRight className="h-3 w-3" />
+              </span>
+            </Link>
+          ) : null}
+
           <div className="mt-12 grid gap-10 lg:grid-cols-[1.45fr_0.55fr] lg:gap-14">
             <div>
               <div>

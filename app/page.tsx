@@ -3,7 +3,9 @@ import {
   ArrowRight,
   ArrowUpRight,
   Atom,
+  FlaskConical,
   ShieldCheck,
+  Sparkles,
   Trophy,
   Users,
 } from "lucide-react";
@@ -283,6 +285,60 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-line bg-white py-16 md:py-24">
+        <div className="container-page">
+          <SectionHeader
+            eyebrow="Interactive"
+            title="Not screenshots. Things you can run."
+            description="The models and algorithms on this site are reimplemented in the browser where that is honest, and clearly labelled when it is a simulation."
+          />
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {[
+              {
+                href: "/quantum-lab",
+                icon: Atom,
+                title: "Quantum Computing Lab",
+                body: "Build circuits gate by gate, watch the statevector and Bloch sphere update, and step through superposition and entanglement.",
+                cta: "Open the lab",
+              },
+              {
+                href: "/labs/network-intrusion-detection",
+                icon: FlaskConical,
+                title: "Runnable model labs",
+                body: "An intrusion-detection scorer, a retrain quality gate and a byte-level BPE tokenizer, each replaying the published behaviour.",
+                cta: "Try the models",
+              },
+              {
+                href: "/activity",
+                icon: Sparkles,
+                title: "Engineering activity",
+                body: "Live GitHub statistics, language composition and recent events, with the data source and freshness stated on the page.",
+                cta: "See the activity",
+              },
+            ].map((item) => (
+              <Reveal key={item.href}>
+                <Link
+                  href={item.href}
+                  className="group flex h-full flex-col justify-between rounded-xl border border-line bg-white p-5 transition-colors hover:border-emerald-300"
+                >
+                  <div>
+                    <span className="grid h-9 w-9 place-items-center rounded-lg border border-emerald-100 bg-emerald-50 text-emerald-700">
+                      <item.icon className="h-4 w-4" />
+                    </span>
+                    <h3 className="mt-4 text-[14px] font-medium leading-snug text-ink">{item.title}</h3>
+                    <p className="mt-2 text-[12px] leading-relaxed text-quiet">{item.body}</p>
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.12em] text-emerald-700">
+                    {item.cta}
+                    <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

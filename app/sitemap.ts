@@ -11,9 +11,17 @@ const pages = [
   { path: "/about/", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/projects/", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/achievements/", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/quantum-lab/", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/activity/", priority: 0.7, changeFrequency: "daily" as const },
   { path: "/skills/", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/education/", priority: 0.6, changeFrequency: "yearly" as const },
   { path: "/contact/", priority: 0.7, changeFrequency: "yearly" as const },
+];
+
+const labs = [
+  "/labs/network-intrusion-detection/",
+  "/labs/medical-imaging-mlops/",
+  "/labs/gpt2-clone/",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -25,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: page.changeFrequency,
       priority: page.priority,
+    })),
+    ...labs.map((path) => ({
+      url: `${base}${path}`,
+      lastModified: now,
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
     ...detailProjects.map((project) => ({
       url: `${base}/projects/${project.slug}/`,

@@ -30,6 +30,7 @@ export type Project = {
   motif: "signal" | "scan" | "tokens" | "graph" | "film" | "ledger";
   featured: boolean;
   detail: boolean;
+  lab?: { href: string; label: string; note: string };
 };
 
 const repo = (name: string) => `https://github.com/PujanCoder/${name}`;
@@ -37,6 +38,11 @@ const repo = (name: string) => `https://github.com/PujanCoder/${name}`;
 export const projects: Project[] = [
   {
     slug: "network-intrusion-detection",
+    lab: {
+      href: "/labs/network-intrusion-detection/",
+      label: "Run the detection lab",
+      note: "Score a flow against the published threshold and watch the confusion matrix move.",
+    },
     title: "Network Intrusion Detection — Advanced MLOps",
     kicker: "Real-time NDR platform",
     subtitle:
@@ -135,6 +141,11 @@ export const projects: Project[] = [
   },
   {
     slug: "medical-imaging-mlops",
+    lab: {
+      href: "/labs/medical-imaging-mlops/",
+      label: "Open the quality-gate lab",
+      note: "Move the sensitivity floor and see why the gate rejects or promotes a retrain.",
+    },
     title: "Medical Imaging MLOps",
     kicker: "Self-healing training pipeline",
     subtitle:
@@ -217,6 +228,11 @@ export const projects: Project[] = [
   },
   {
     slug: "gpt2-clone",
+    lab: {
+      href: "/labs/gpt2-clone/",
+      label: "Use the byte-level BPE tokenizer",
+      note: "Tokenize text with the same merge algorithm the model was trained on.",
+    },
     title: "GPT-2 Clone",
     kicker: "Transformer from first principles",
     subtitle:
