@@ -1,0 +1,792 @@
+{
+  "generatedAt": "2026-11-27T16:06:44.559Z",
+  "user": {
+    "login": "PujanCoder",
+    "name": "Pujan Pandey",
+    "bio": "# 👨‍💻 Pujan Pandey\r\n\r\n- 🔬 Machine Learning & Quantum Computing Enthusiast  \r\n- 💻 Skills: Python, Data Science, ML, Qiskit  \r\n",
+    "location": "Tilottama , Butwal",
+    "blog": "",
+    "email": "pujanpandey012@gmail.com",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/177131339?v=4",
+    "htmlUrl": "https://github.com/PujanCoder",
+    "publicRepos": 43,
+    "followers": 0,
+    "following": 0,
+    "createdAt": "2024-07-31T13:54:43Z"
+  },
+  "repos": [
+    {
+      "name": "protfolio",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/protfolio",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 0,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-11-27T15:55:03Z",
+      "pushedAt": "2026-11-27T15:55:05Z",
+      "archived": false
+    },
+    {
+      "name": "Network-Intrusion-Detection-Advanced-MLOps",
+      "description": "The goal is to build a production-style machine learning system that analyzes network traffic and detects suspicious activity, such as: - DDoS attacks - Port scanning - Brute-force attacks - Botnet traffic - Web attacks - Infiltration attempts",
+      "htmlUrl": "https://github.com/PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 23684,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-11-15T07:50:59Z",
+      "pushedAt": "2026-11-27T12:49:53Z",
+      "archived": false
+    },
+    {
+      "name": "GPT-2-CLONE",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/GPT-2-CLONE",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 561,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-10-31T08:30:49Z",
+      "pushedAt": "2026-11-04T03:58:34Z",
+      "archived": false
+    },
+    {
+      "name": "Medical-imaging-MLOps",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Medical-imaging-MLOps",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 679175,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-08-20T11:30:13Z",
+      "pushedAt": "2026-10-15T03:58:05Z",
+      "archived": false
+    },
+    {
+      "name": "ComplaineQAPipeline",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/ComplaineQAPipeline",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 4805,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-08-30T12:38:46Z",
+      "pushedAt": "2026-10-09T02:14:17Z",
+      "archived": false
+    },
+    {
+      "name": "Image-Generator",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Image-Generator",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 3,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-10-05T08:35:11Z",
+      "pushedAt": "2026-10-05T08:35:12Z",
+      "archived": false
+    },
+    {
+      "name": "ML-Failure-Autopilot",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/ML-Failure-Autopilot",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 3,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-09-30T12:27:10Z",
+      "pushedAt": "2026-09-30T12:27:12Z",
+      "archived": false
+    },
+    {
+      "name": "JARVIS-RealTime-Voice-Agen",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/JARVIS-RealTime-Voice-Agen",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 24,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-09-19T10:00:23Z",
+      "pushedAt": "2026-09-19T10:05:46Z",
+      "archived": false
+    },
+    {
+      "name": "Multi_Agent_Travel_System",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Multi_Agent_Travel_System",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 27,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-09-09T04:03:04Z",
+      "pushedAt": "2026-09-14T14:45:21Z",
+      "archived": false
+    },
+    {
+      "name": "Credit-Card-Fraud-Detection-_-MLOps",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Credit-Card-Fraud-Detection-_-MLOps",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 111,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-07-28T03:50:26Z",
+      "pushedAt": "2026-08-23T06:55:35Z",
+      "archived": false
+    },
+    {
+      "name": "Capstone-_-MLOPS-Project",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Capstone-_-MLOPS-Project",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 869,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-08-03T02:32:18Z",
+      "pushedAt": "2026-08-07T09:15:11Z",
+      "archived": false
+    },
+    {
+      "name": "Green-MLOps-A-Carbon-Aware-Machine-Learning-Platform-for-Sustainable-AI",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Green-MLOps-A-Carbon-Aware-Machine-Learning-Platform-for-Sustainable-AI",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 3,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-08-06T13:05:41Z",
+      "pushedAt": "2026-08-06T13:05:43Z",
+      "archived": false
+    },
+    {
+      "name": "MLops",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/MLops",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 234830,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-07-24T11:35:39Z",
+      "pushedAt": "2026-08-02T04:20:56Z",
+      "archived": false
+    },
+    {
+      "name": "MLOps-Project---Vehicle-Insurance-Data-Pipeline",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/MLOps-Project---Vehicle-Insurance-Data-Pipeline",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 18,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-06-12T02:48:23Z",
+      "pushedAt": "2026-06-20T07:29:00Z",
+      "archived": false
+    },
+    {
+      "name": "forest-cover-predictor",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/forest-cover-predictor",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 193,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-15T16:12:11Z",
+      "pushedAt": "2026-06-11T10:51:32Z",
+      "archived": false
+    },
+    {
+      "name": "Docker_Plan",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Docker_Plan",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 4,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-06-10T05:21:19Z",
+      "pushedAt": "2026-06-11T06:45:27Z",
+      "archived": false
+    },
+    {
+      "name": "ML_FLows",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/ML_FLows",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 46,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-06-05T04:24:45Z",
+      "pushedAt": "2026-06-10T05:18:47Z",
+      "archived": false
+    },
+    {
+      "name": "MLOps_Project",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/MLOps_Project",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 233,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-06-03T07:25:15Z",
+      "pushedAt": "2026-06-04T12:45:36Z",
+      "archived": false
+    },
+    {
+      "name": "AI-YouTube-Video-Summarizer",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/AI-YouTube-Video-Summarizer",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 28,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-26T14:40:03Z",
+      "pushedAt": "2026-06-02T15:17:49Z",
+      "archived": false
+    },
+    {
+      "name": "Segmentation_Prediction",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Segmentation_Prediction",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "size": 13,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-22T10:16:33Z",
+      "pushedAt": "2026-05-27T12:39:55Z",
+      "archived": false
+    },
+    {
+      "name": "Pujan-Pandey",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Pujan-Pandey",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "size": 172,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-23T11:40:31Z",
+      "pushedAt": "2026-05-23T11:47:36Z",
+      "archived": false
+    },
+    {
+      "name": "resume_analyzer",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/resume_analyzer",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 0,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-23T05:26:31Z",
+      "pushedAt": "2026-05-23T05:26:31Z",
+      "archived": false
+    },
+    {
+      "name": "movie_recommender",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/movie_recommender",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 0,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-21T11:32:24Z",
+      "pushedAt": "2026-05-21T11:32:24Z",
+      "archived": false
+    },
+    {
+      "name": "loan-approval-app",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/loan-approval-app",
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "size": 190,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2026-05-17T05:18:21Z",
+      "pushedAt": "2026-05-17T05:20:07Z",
+      "archived": false
+    },
+    {
+      "name": "Image_Classification",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Image_Classification",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 9,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-17T09:02:09Z",
+      "pushedAt": "2025-11-05T02:34:12Z",
+      "archived": false
+    },
+    {
+      "name": "Stock_Price_Prediction",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Stock_Price_Prediction",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 92,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-15T07:15:33Z",
+      "pushedAt": "2025-10-21T15:36:38Z",
+      "archived": false
+    },
+    {
+      "name": "Smart_CuraPath",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Smart_CuraPath",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "size": 1026,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-06T06:52:56Z",
+      "pushedAt": "2025-10-18T09:30:33Z",
+      "archived": false
+    },
+    {
+      "name": "Crop_Yield_Prediction",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Crop_Yield_Prediction",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 570,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-07T02:19:55Z",
+      "pushedAt": "2025-10-17T02:48:19Z",
+      "archived": false
+    },
+    {
+      "name": "Pujan__Pandey",
+      "description": "Hellp world",
+      "htmlUrl": "https://github.com/PujanCoder/Pujan__Pandey",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 39,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-16T04:19:38Z",
+      "pushedAt": "2025-10-14T05:30:12Z",
+      "archived": false
+    },
+    {
+      "name": "Water-Quality-Prediction-System",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Water-Quality-Prediction-System",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 311,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-08T03:52:07Z",
+      "pushedAt": "2025-10-08T03:56:57Z",
+      "archived": false
+    },
+    {
+      "name": "House_Rent_Prediction_Model_Machine_Learning",
+      "description": "House Rent Prediction  This project predicts house rental prices using a Linear Regression model. It includes data preprocessing, feature scaling, and model evaluation using metrics like MSE and R². The goal is to help users estimate rental costs based on property features efficiently.",
+      "htmlUrl": "https://github.com/PujanCoder/House_Rent_Prediction_Model_Machine_Learning",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 170,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-06T06:47:13Z",
+      "pushedAt": "2025-10-06T06:51:21Z",
+      "archived": false
+    },
+    {
+      "name": "Credit-Card-Fraud-Detection-using-Quantum-Machine-Learning",
+      "description": "Goal:  To build a smart fraud detection system that can:  Identify fraudulent transactions from normal ones  Compare classical machine learning models vs quantum machine learning models (QSVC / VQC)  Demonstrate how quantum computing may improve performance on complex data patterns",
+      "htmlUrl": "https://github.com/PujanCoder/Credit-Card-Fraud-Detection-using-Quantum-Machine-Learning",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 44,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-10-05T13:50:20Z",
+      "pushedAt": "2025-10-05T14:15:38Z",
+      "archived": false
+    },
+    {
+      "name": "Double_Slit_Experiment",
+      "description": "A simulation of the classic Double Slit Experiment demonstrating wave-particle duality of light and quantum interference. Visualizes probability distributions, interference patterns, and the transition from classical to quantum behavior, helping to explore the fundamentals of quantum mechanics.",
+      "htmlUrl": "https://github.com/PujanCoder/Double_Slit_Experiment",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 90,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-18T01:51:00Z",
+      "pushedAt": "2025-09-19T13:16:54Z",
+      "archived": false
+    },
+    {
+      "name": "Double_Slit_With_Observer",
+      "description": "Double Slit Experiment with Observer – Qiskit Simulation This project simulates the quantum double-slit experiment with an observer/detector. Adding observation collapses the wavefunction, removing superposition and destroying the interference pattern, illustrating the shift from wave-like to particle-like behavior.",
+      "htmlUrl": "https://github.com/PujanCoder/Double_Slit_With_Observer",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 26,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-20T04:19:20Z",
+      "pushedAt": "2025-09-19T13:16:36Z",
+      "archived": false
+    },
+    {
+      "name": "Quantum-Teleportation",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Quantum-Teleportation",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 93,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-25T11:17:07Z",
+      "pushedAt": "2025-09-19T12:16:55Z",
+      "archived": false
+    },
+    {
+      "name": "Superdense-Coding",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Superdense-Coding",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 55,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-09-18T10:48:56Z",
+      "pushedAt": "2025-09-19T12:11:47Z",
+      "archived": false
+    },
+    {
+      "name": "Grover_Algorithm",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Grover_Algorithm",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 64,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-09-11T15:21:00Z",
+      "pushedAt": "2025-09-19T12:10:48Z",
+      "archived": false
+    },
+    {
+      "name": "Quantum-Chemistry-Simulation-",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Quantum-Chemistry-Simulation-",
+      "language": null,
+      "stars": 0,
+      "forks": 0,
+      "size": 0,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-09-13T15:30:29Z",
+      "pushedAt": "2025-09-13T15:30:30Z",
+      "archived": false
+    },
+    {
+      "name": "Breast_Cancer-Prediction-using-Quantum-Machine-Learning-QSVM-",
+      "description": "This project applies Quantum Support Vector Machines (QSVM) to classify breast cancer tumors as benign or malignant. By leveraging quantum kernels in Qiskit, we explore the potential of Quantum Machine Learning (QML) to solve real-world biomedical classification problems.",
+      "htmlUrl": "https://github.com/PujanCoder/Breast_Cancer-Prediction-using-Quantum-Machine-Learning-QSVM-",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 4,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-09-06T10:20:18Z",
+      "pushedAt": "2025-09-06T10:21:36Z",
+      "archived": false
+    },
+    {
+      "name": "Quantum_Phase_Estimation",
+      "description": null,
+      "htmlUrl": "https://github.com/PujanCoder/Quantum_Phase_Estimation",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 322,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-09-02T03:09:24Z",
+      "pushedAt": "2025-09-02T03:11:42Z",
+      "archived": false
+    },
+    {
+      "name": "Shor-s-Algorithm",
+      "description": "Implementation of Shor’s Algorithm in Python using Qiskit. This repository demonstrates quantum order-finding and integer factorization with step-by-step explanations of the mathematics and quantum circuits. Ideal for learning quantum computing basics and Shor’s Algorithm.",
+      "htmlUrl": "https://github.com/PujanCoder/Shor-s-Algorithm",
+      "language": "Jupyter Notebook",
+      "stars": 1,
+      "forks": 0,
+      "size": 106,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-17T15:10:12Z",
+      "pushedAt": "2025-08-17T15:48:04Z",
+      "archived": false
+    },
+    {
+      "name": "Diabeties_Prediction-",
+      "description": "The Diabetes Prediction Model uses machine learning to predict the risk of diabetes based on health factors like glucose, BMI, blood pressure, age, and insulin. Built with supervised learning on the PIMA dataset, it serves as an early detection tool to support preventive healthcare and reduce complications.",
+      "htmlUrl": "https://github.com/PujanCoder/Diabeties_Prediction-",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "size": 11,
+      "topics": [],
+      "homepage": null,
+      "createdAt": "2025-08-16T11:39:28Z",
+      "pushedAt": "2025-08-17T14:44:47Z",
+      "archived": false
+    }
+  ],
+  "events": [
+    {
+      "type": "PullRequestEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T12:49:53Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T12:49:35Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T12:35:52Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T12:15:47Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T11:28:27Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-27T07:57:26Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-25T03:13:44Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-25T03:10:08Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-24T10:30:47Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-24T10:23:53Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-23T10:02:01Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-24T06:34:39Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-24T09:42:11Z"
+    },
+    {
+      "type": "WatchEvent",
+      "repo": "Luke-J-Miller/Qiskit-v2.X-developer-certification-practice-test",
+      "createdAt": "2026-11-24T06:25:58Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-23T10:23:04Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-23T10:13:27Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-23T10:03:32Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-23T10:05:22Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-20T14:14:39Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-20T14:13:57Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-21T04:09:59Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/Network-Intrusion-Detection-Advanced-MLOps",
+      "createdAt": "2026-11-19T04:02:03Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/GPT-2-CLONE",
+      "createdAt": "2026-11-04T03:58:35Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/GPT-2-CLONE",
+      "createdAt": "2026-11-02T02:35:46Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PujanCoder/GPT-2-CLONE",
+      "createdAt": "2026-11-01T09:27:17Z"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "PujanCoder/GPT-2-CLONE",
+      "createdAt": "2026-10-31T08:30:51Z"
+    }
+  ],
+  "languages": {
+    "Network-Intrusion-Detection-Advanced-MLOps": {
+      "Jupyter Notebook": 10617612,
+      "HTML": 8066559,
+      "Python": 375196,
+      "TypeScript": 101371,
+      "CSS": 30757,
+      "JavaScript": 15913,
+      "Shell": 1469
+    },
+    "Medical-imaging-MLOps": {
+      "Jupyter Notebook": 754580,
+      "Python": 79483,
+      "Dockerfile": 218
+    },
+    "GPT-2-CLONE": {
+      "Python": 20839
+    },
+    "Multi_Agent_Travel_System": {
+      "Python": 36452,
+      "CSS": 8543,
+      "JavaScript": 4620,
+      "HTML": 4069
+    },
+    "ComplaineQAPipeline": {
+      "Python": 27581
+    },
+    "Credit-Card-Fraud-Detection-_-MLOps": {
+      "Jupyter Notebook": 146652,
+      "Python": 33338,
+      "Makefile": 4682,
+      "Dockerfile": 233
+    },
+    "AI-YouTube-Video-Summarizer": {
+      "Python": 60499
+    },
+    "Smart_CuraPath": {
+      "Python": 170091
+    },
+    "forest-cover-predictor": {
+      "Jupyter Notebook": 206719,
+      "JavaScript": 23789,
+      "CSS": 22495,
+      "HTML": 16985,
+      "Python": 8709
+    },
+    "Capstone-_-MLOPS-Project": {
+      "Python": 46066,
+      "Jupyter Notebook": 40997,
+      "Makefile": 4684,
+      "HTML": 2376
+    }
+  }
+}
