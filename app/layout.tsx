@@ -5,6 +5,7 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { AskPujan } from "@/components/assistant/ask-pujan";
+import { ModeProvider } from "@/components/mode/mode-provider";
 import { profile } from "@/lib/profile";
 
 const siteUrl =
@@ -110,10 +111,12 @@ export default function RootLayout({
         <noscript>
           <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
         </noscript>
-        <SiteHeader />
-        <main id="main">{children}</main>
-        <SiteFooter />
-        <AskPujan />
+        <ModeProvider>
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+          <AskPujan />
+        </ModeProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}

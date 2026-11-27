@@ -1,24 +1,14 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Download, Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { footerGroups } from "@/lib/navigation";
 import { profile } from "@/lib/profile";
-
-const pages = [
-  { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/quantum-lab", label: "Quantum Lab" },
-  { href: "/activity", label: "Activity" },
-  { href: "/achievements", label: "Achievements" },
-  { href: "/skills", label: "Skills" },
-  { href: "/education", label: "Education" },
-  { href: "/contact", label: "Contact" },
-];
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-line bg-canvas-soft">
       <div className="container-page py-14">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_2fr]">
           <div>
             <div className="flex items-center gap-3">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-forest text-[12.5px] font-semibold text-white">
@@ -32,30 +22,11 @@ export function SiteFooter() {
               </div>
             </div>
             <p className="mt-4 max-w-sm text-[13px] leading-relaxed text-quiet">
-              Building intelligent systems and exploring what&apos;s possible —
-              from production ML pipelines to quantum circuits.
+              Building intelligent systems and exploring what&apos;s possible — from
+              production ML pipelines to quantum circuits.
             </p>
-          </div>
 
-          <nav aria-label="Footer">
-            <p className="mono-label">Pages</p>
-            <ul className="mt-4 space-y-2.5">
-              {pages.map((page) => (
-                <li key={page.href}>
-                  <Link
-                    href={page.href}
-                    className="text-[13px] text-quiet transition-colors hover:text-forest"
-                  >
-                    {page.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div>
-            <p className="mono-label">Elsewhere</p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-5 space-y-2.5">
               <li>
                 <a
                   href={profile.github}
@@ -87,7 +58,39 @@ export function SiteFooter() {
                   {profile.email}
                 </a>
               </li>
+              <li>
+                {/* File download, not a page navigation, so a plain anchor is correct here. */}
+                {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                <a
+                  href="/api/cv/general/"
+                  download
+                  className="inline-flex items-center gap-2 text-[13px] text-quiet transition-colors hover:text-forest"
+                >
+                  <Download className="h-3.5 w-3.5" />
+                  Download CV (PDF)
+                </a>
+              </li>
             </ul>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-3">
+            {footerGroups.map((group) => (
+              <nav key={group.title} aria-label={group.title}>
+                <p className="mono-label">{group.title}</p>
+                <ul className="mt-4 space-y-2.5">
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="text-[13px] text-quiet transition-colors hover:text-forest"
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
           </div>
         </div>
 
