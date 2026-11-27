@@ -53,7 +53,7 @@ export default function HomePage() {
             </p>
 
             <p className="mt-5 font-mono text-[10.5px] uppercase leading-relaxed tracking-[0.14em] text-emerald-800">
-              {profile.roles.slice(0, 4).join(" · ")}
+              {profile.roleLine}
             </p>
 
             <p className="mt-6 max-w-xl text-[14.5px] leading-relaxed text-quiet">

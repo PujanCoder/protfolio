@@ -12,6 +12,8 @@ export const profile = {
     "Deep Learning Developer",
   ],
   shortRole: "AI/ML Engineer & MLOps Developer",
+  roleLine:
+    "AI/ML Engineer · MLOps Developer · Cybersecurity · Quantum Computing",
   location: "Butwal, Nepal",
   timezone: "NPT (UTC+05:45)",
   email: "pujanpandey012@gmail.com",
