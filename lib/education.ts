@@ -7,7 +7,7 @@ export type EducationEntry = {
   note: string;
 };
 
-// TODO(content): add the Class 12 institution, and the years for both entries.
+// verify: Class 12 institution and the years for both entries.
 export const education: EducationEntry[] = [
   {
     id: "class-12",

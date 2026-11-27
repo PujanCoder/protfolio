@@ -28,7 +28,6 @@ export type Project = {
   highlights: string[];
   limitations: string[];
   motif: "signal" | "scan" | "tokens" | "graph" | "film" | "ledger";
-  accent: "iris" | "mint" | "amber" | "rose";
   featured: boolean;
   detail: boolean;
 };
@@ -131,7 +130,6 @@ export const projects: Project[] = [
       "Detector thresholds are heuristic and need per-site tuning.",
     ],
     motif: "signal",
-    accent: "mint",
     featured: true,
     detail: true,
   },
@@ -214,7 +212,6 @@ export const projects: Project[] = [
       "The dataset is committed to the repository, which makes clones heavy.",
     ],
     motif: "scan",
-    accent: "iris",
     featured: true,
     detail: true,
   },
@@ -281,7 +278,6 @@ export const projects: Project[] = [
       "The model has been validated structurally and by unit tests, not by a loss curve on a real corpus.",
     ],
     motif: "tokens",
-    accent: "amber",
     featured: true,
     detail: true,
   },
@@ -356,7 +352,6 @@ export const projects: Project[] = [
       "Flight data quality depends on the AviationStack plan; the free tier is limited.",
     ],
     motif: "graph",
-    accent: "mint",
     featured: true,
     detail: true,
   },
@@ -433,7 +428,6 @@ export const projects: Project[] = [
       "Requires Azure Video Indexer, Azure AI Search and Azure OpenAI resources, so it cannot be run end-to-end without cloud credentials.",
     ],
     motif: "film",
-    accent: "rose",
     featured: true,
     detail: true,
   },
@@ -510,7 +504,6 @@ export const projects: Project[] = [
       "No recorded evaluation metrics are published in the repository yet.",
     ],
     motif: "ledger",
-    accent: "iris",
     featured: true,
     detail: true,
   },

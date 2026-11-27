@@ -21,7 +21,7 @@ export type Achievement = {
 const repo = (name: string) => `https://github.com/PujanCoder/${name}`;
 
 // Content note: every entry below comes from Pujan's own account of his record or
-// from public repositories. Fields marked TODO(content) still need a verifiable
+// from public repositories. Entries marked "verify" still need a verifiable
 // link (certificate, event page, or organiser announcement) before they can be
 // presented as externally confirmed.
 export const achievements: Achievement[] = [
@@ -46,7 +46,7 @@ export const achievements: Achievement[] = [
       { label: "QSVM — breast cancer", href: repo("Breast_Cancer-Prediction-using-Quantum-Machine-Learning-QSVM-") },
       { label: "QML — card fraud", href: repo("Credit-Card-Fraud-Detection-using-Quantum-Machine-Learning") },
     ],
-    // TODO(content): add the public Qiskit Advocate verification URL once available.
+    // verify: add the public Qiskit Advocate directory entry once it is linkable.
     featured: true,
     order: 1,
   },
@@ -62,7 +62,7 @@ export const achievements: Achievement[] = [
       "Worked in a team under a fixed deadline, from problem scoping through to a demo.",
       "Shared the result with judges and the wider event audience as a team placement.",
     ],
-    // TODO(content): add event name, organiser, date and project repository.
+    // verify: event name, organiser, date and project repository.
     evidence: [],
     featured: true,
     order: 2,
@@ -78,7 +78,7 @@ export const achievements: Achievement[] = [
     detail: [
       "Contributed to a team build during the event and worked through the full prototype cycle.",
     ],
-    // TODO(content): confirm placement and add the event or project link before
+    // verify: confirm placement and add the event or project link before
     // presenting this as a result rather than participation.
     evidence: [],
     featured: false,
@@ -109,7 +109,7 @@ export const achievements: Achievement[] = [
       "Helped organise coding programmes and technical events.",
       "Handled coordination and record-keeping for club activities.",
     ],
-    // TODO(content): add school name and the years served.
+    // verify: school name and years served.
     evidence: [],
     featured: true,
     order: 5,
