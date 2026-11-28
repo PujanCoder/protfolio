@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ArrowUp, Loader2, Sparkles, X } from "lucide-react";
-
-type Message = { role: "user" | "assistant"; content: string };
+import { useAssistantChat } from "@/components/assistant/use-chat";
 
 const SUGGESTIONS = [
   "What does the NDR platform actually do?",
@@ -14,13 +13,11 @@ const SUGGESTIONS = [
 
 export function AskPujan() {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
-  const [busy, setBusy] = useState(false);
-  const [mode, setMode] = useState("");
-  const [error, setError] = useState("");
+  const { messages, busy, mode, error, ask } = useAssistantChat();
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight });
   }, [messages, open]);
@@ -33,43 +30,10 @@ export function AskPujan() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  async function ask(question: string) {
-    const trimmed = question.trim();
-    if (!trimmed || busy) return;
-    const history: Message[] = [...messages, { role: "user", content: trimmed }];
-    setMessages([...history, { role: "assistant", content: "" }]);
+  function submit(question: string) {
+    if (busy) return;
     setInput("");
-    setError("");
-    setBusy(true);
-    try {
-      const response = await fetch("/api/assistant/", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ messages: history }),
-      });
-      setMode(response.headers.get("x-assistant-mode") ?? "");
-      if (!response.ok || !response.body) {
-        throw new Error((await response.text()) || "The assistant is unavailable.");
-      }
-      const reader = response.body.getReader();
-      const decoder = new TextDecoder();
-      let text = "";
-      for (;;) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        text += decoder.decode(value, { stream: true });
-        setMessages((prev) =>
-          prev.map((message, index) =>
-            index === prev.length - 1 ? { ...message, content: text } : message,
-          ),
-        );
-      }
-    } catch (caught) {
-      setError(caught instanceof Error ? caught.message : "Something went wrong.");
-      setMessages((prev) => prev.slice(0, -1));
-    } finally {
-      setBusy(false);
-    }
+    void ask(question);
   }
 
   return (
@@ -84,6 +48,7 @@ export function AskPujan() {
         {open ? <X className="h-3.5 w-3.5" /> : <Sparkles className="h-3.5 w-3.5" />}
         {open ? "Close" : "Ask Pujan"}
       </button>
+
       {open && (
         <section
           id="ask-pujan-panel"
@@ -93,14 +58,13 @@ export function AskPujan() {
           <header className="flex items-center justify-between border-b border-line px-4 py-3">
             <div>
               <p className="text-[13px] font-medium text-ink">Ask Pujan</p>
-              <p className="text-[10.5px] text-quiet">
-                Answers from verified portfolio data only
-              </p>
+              <p className="text-[10.5px] text-quiet">Answers from verified portfolio data only</p>
             </div>
             <span className="rounded-full border border-line px-2 py-0.5 font-mono text-[9px] uppercase tracking-[0.1em] text-quiet">
               {mode === "live" ? "live model" : "knowledge mode"}
             </span>
           </header>
+
           <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
             {messages.length === 0 && (
               <div>
@@ -113,7 +77,7 @@ export function AskPujan() {
                     <button
                       key={suggestion}
                       type="button"
-                      onClick={() => ask(suggestion)}
+                      onClick={() => submit(suggestion)}
                       className="block w-full rounded-lg border border-line px-3 py-2 text-left text-[11.5px] text-ink-soft transition-colors hover:border-emerald-300 hover:bg-emerald-50/60"
                     >
                       {suggestion}
@@ -142,7 +106,10 @@ export function AskPujan() {
               </div>
             ))}
             {error && (
-              <p role="alert" className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-[11.5px] text-rose-700">
+              <p
+                role="alert"
+                className="rounded-lg border border-rose-200 bg-rose-50 px-3 py-2 text-[11.5px] text-rose-700"
+              >
                 {error}
               </p>
             )}
@@ -151,7 +118,7 @@ export function AskPujan() {
           <form
             onSubmit={(event) => {
               event.preventDefault();
-              ask(input);
+              submit(input);
             }}
             className="border-t border-line px-3 py-3"
           >
@@ -171,7 +138,11 @@ export function AskPujan() {
                 aria-label="Send question"
                 className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-forest text-white transition-colors disabled:opacity-40"
               >
-                {busy ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <ArrowUp className="h-3.5 w-3.5" />}
+                {busy ? (
+                  <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                ) : (
+                  <ArrowUp className="h-3.5 w-3.5" />
+                )}
               </button>
             </div>
           </form>

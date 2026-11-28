@@ -94,7 +94,7 @@ export function GateExplorer() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8">
-      <div className="space-y-5">
+      <div className="min-w-0 space-y-5">
         <div className="rounded-2xl border border-line bg-white p-5 sm:p-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
@@ -247,7 +247,7 @@ export function GateExplorer() {
         </div>
       </div>
 
-      <div className="space-y-5">
+      <div className="min-w-0 space-y-5">
         <div className="rounded-2xl border border-line bg-white p-5 sm:p-6">
           <div className="flex items-start justify-between gap-3">
             <div>
@@ -375,7 +375,7 @@ export function GateExplorer() {
               className="inline-flex items-center gap-1.5 rounded-md border border-emerald-400/30 px-2 py-1 font-mono text-[9.5px] uppercase tracking-[0.1em] text-emerald-200 transition-colors hover:border-emerald-300/60 hover:text-white"
             />
           </div>
-          <pre className="mt-3 overflow-x-auto text-[11px] leading-relaxed text-emerald-100/90">
+          <pre className="mt-3 max-w-full overflow-x-auto text-[11px] leading-relaxed text-emerald-100/90">
             <code>{code}</code>
           </pre>
           <p className="mt-3 border-t border-emerald-400/15 pt-3 text-[10.5px] leading-relaxed text-emerald-200/70">

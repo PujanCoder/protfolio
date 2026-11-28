@@ -5,6 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { Badge, CTASection, PageHero, SectionHeader } from "@/components/ui";
 import { GateExplorer } from "@/components/quantum/gate-explorer";
 import { EntanglementDemo, SuperpositionDemo } from "@/components/quantum/demos";
+import { NoisePanel } from "@/components/quantum/noise-panel";
 import { achievements } from "@/lib/achievements";
 
 export const metadata: Metadata = {
@@ -186,6 +187,21 @@ export default function QuantumPage() {
         <div className="container-page py-14 md:py-16">
           <Reveal>
             <SectionHeader
+              eyebrow="Noise"
+              title="Exact amplitudes are the easy part."
+              description="A statevector simulator has no error model. Move the slider to see what a depolarising channel does to the same Bell pair: fidelity falls, off-diagonal terms decay, and the measurement distribution flattens toward uniform."
+            />
+          </Reveal>
+          <div className="mt-8">
+            <NoisePanel />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-line bg-white">
+        <div className="container-page py-14 md:py-16">
+          <Reveal>
+            <SectionHeader
               eyebrow="Public work"
               title="Qiskit experiments in the open"
               description="Nine repositories, each one a runnable notebook rather than a claim. Open any of them and read the circuits."
@@ -193,14 +209,14 @@ export default function QuantumPage() {
             />
           </Reveal>
 
-          <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-3 [&>*]:min-w-0 sm:grid-cols-2 lg:grid-cols-3">
             {experiments.map((experiment, index) => (
               <Reveal key={experiment.repo} delay={index * 0.02}>
                 <a
                   href={`https://github.com/PujanCoder/${experiment.repo}`}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="group flex h-full flex-col rounded-xl border border-line bg-white p-4 transition-all hover:-translate-y-0.5 hover:border-forest/25 hover:shadow-[0_8px_28px_-18px_rgba(6,78,59,0.45)]"
+                  className="group flex h-full min-w-0 flex-col rounded-xl border border-line bg-white p-4 transition-all hover:-translate-y-0.5 hover:border-forest/25 hover:shadow-[0_8px_28px_-18px_rgba(6,78,59,0.45)]"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="text-[13.5px] font-medium text-ink">{experiment.title}</h3>
