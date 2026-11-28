@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://PujanCoder.github.io/protfolio
+Sitemap: https://PujanCoder.github.io/protfolio/sitemap.xml
