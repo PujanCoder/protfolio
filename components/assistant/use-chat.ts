@@ -1,6 +1,7 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
+import { answerLocally } from "@/lib/assistant/answer";
 
 export type ChatMessage = { role: "user" | "assistant"; content: string };
 
@@ -13,56 +14,54 @@ type ChatState = {
   reset: () => void;
 };
 
-/** Streams answers from /api/assistant, which is grounded in the published portfolio data. */
+const MAX_CHARS = 2000;
+
+/**
+ * Answers come from lib/assistant/knowledge.ts in the browser, so the console
+ * works on a fully static deployment with no server and no API key.
+ */
 export function useAssistantChat(): ChatState {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [busy, setBusy] = useState(false);
   const [mode, setMode] = useState("");
   const [error, setError] = useState("");
+  const timer = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const ask = useCallback(
-    async (question: string) => {
-      const trimmed = question.trim();
-      if (!trimmed) return;
-      setBusy(true);
-      setError("");
-      const history: ChatMessage[] = [...messages, { role: "user", content: trimmed }];
-      setMessages([...history, { role: "assistant", content: "" }]);
+  const ask = useCallback(async (question: string) => {
+    const trimmed = question.trim().slice(0, MAX_CHARS);
+    if (!trimmed) return;
 
-      try {
-        const response = await fetch("/api/assistant/", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ messages: history }),
-        });
-        setMode(response.headers.get("x-assistant-mode") ?? "");
-        if (!response.ok || !response.body) {
-          throw new Error((await response.text()) || "The assistant is unavailable.");
+    if (timer.current) clearInterval(timer.current);
+    setBusy(true);
+    setError("");
+    setMessages((prev) => [...prev, { role: "user", content: trimmed }, { role: "assistant", content: "" }]);
+
+    const { text, mode: answerMode } = answerLocally(trimmed);
+    setMode(answerMode);
+
+    const words = text.match(/\S+\s*/g) ?? [text];
+    await new Promise<void>((resolve) => {
+      let index = 0;
+      timer.current = setInterval(() => {
+        index += 1;
+        const partial = words.slice(0, index).join("");
+        setMessages((prev) =>
+          prev.map((message, i) => (i === prev.length - 1 ? { ...message, content: partial } : message)),
+        );
+        if (index >= words.length) {
+          if (timer.current) clearInterval(timer.current);
+          timer.current = null;
+          resolve();
         }
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        let text = "";
-        for (;;) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          text += decoder.decode(value, { stream: true });
-          setMessages((prev) =>
-            prev.map((message, index) =>
-              index === prev.length - 1 ? { ...message, content: text } : message,
-            ),
-          );
-        }
-      } catch (caught) {
-        setError(caught instanceof Error ? caught.message : "Something went wrong.");
-        setMessages((prev) => prev.slice(0, -1));
-      } finally {
-        setBusy(false);
-      }
-    },
-    [messages],
-  );
+      }, 18);
+    });
+
+    setBusy(false);
+  }, []);
 
   const reset = useCallback(() => {
+    if (timer.current) clearInterval(timer.current);
+    timer.current = null;
     setMessages([]);
     setError("");
     setMode("");

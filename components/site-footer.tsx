@@ -3,6 +3,7 @@ import { Download, Mail } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 import { footerGroups } from "@/lib/navigation";
 import { profile } from "@/lib/profile";
+import { withBase } from "@/lib/base-path";
 
 export function SiteFooter() {
   return (
@@ -62,7 +63,7 @@ export function SiteFooter() {
                 {/* File download, not a page navigation, so a plain anchor is correct here. */}
                 {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
                 <a
-                  href="/api/cv/general/"
+                  href={withBase("/cv/pujan-pandey-cv-general.pdf")}
                   download
                   className="inline-flex items-center gap-2 text-[13px] text-quiet transition-colors hover:text-forest"
                 >

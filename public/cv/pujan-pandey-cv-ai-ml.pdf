@@ -1,0 +1,182 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 9923 >>
+stream
+BT /F2 21 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 790.00 Tm (Pujan Pandey) Tj ET
+BT /F1 9 Tf 0.020 0.588 0.412 rg 1 0 0 1 52.00 773.00 Tm (AI/ML Engineer - machine learning systems, evaluation and deep learning) Tj ET
+BT /F1 8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 760.00 Tm (Butwal, Nepal  -  pujanpandey012@gmail.com  -  github.com/PujanCoder  -  linkedin.com/in/pujan-pandey-0583b1321) Tj ET
+0.024 0.306 0.231 RG 1.1 w 52.00 751.00 m 543.00 751.00 l S
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 733.00 Tm (PROFILE) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 728.00 m 543.00 728.00 l S
+BT /F1 8.8 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 716.00 Tm (AI/ML engineer who builds models that hold up outside a notebook: stratified multi-dataset training, held-out evaluation) Tj ET
+BT /F1 8.8 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 704.20 Tm (reported with its failure modes, and inference that runs behind a real API. Implements transformer internals directly in PyTorch) Tj ET
+BT /F1 8.8 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 692.40 Tm (\(GPT-2 architecture, byte-level BPE\) rather than only calling a library.) Tj ET
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 668.60 Tm (SELECTED PROJECTS) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 663.60 m 543.00 663.60 l S
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 651.60 Tm (Network Intrusion Detection - Advanced MLOps) Tj ET
+BT /F1 7.8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 640.60 Tm (Zeek - FastAPI - WebSocket - scikit-learn - React 19 - github.com/PujanCoder/Network-Intrusion-Detection-Advanced-MLOps) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 628.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 628.80 Tm (A working network detection and response platform built on top of a CICIDS2017 ML pipeline. It tails Zeek connection logs,) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 618.20 Tm (scores every flow with a gradient-boosted classifier, enriches alerts with behavioural rules, and streams the result to a) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 607.60 Tm (seven-view security dashboard over WebSocket.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 595.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 595.80 Tm (Held-out F1: 0.973 \(44,734 flows\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 584.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 584.00 Tm (Precision: 0.963 \(held-out test\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 572.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 572.20 Tm (Recall: 0.983 \(held-out test\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 560.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 560.40 Tm (434k raw records across three public datasets, deduplicated to 298k and split 208,755 / 44,733 / 44,734 with stratification by) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 549.80 Tm (dataset and label.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 538.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 538.00 Tm (Cross-dataset results are reported, not hidden: UNSW-NB15 official test reaches 0.939 F1, NSL-KDD reaches 0.492 recall, and) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 527.40 Tm (a zero-day probe trained without NSL-KDD scores 0.00 recall. The model card states that it does not transfer.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 515.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 515.60 Tm (CI runs 85 tests, ruff, DVC validation, an API smoke test against a live server, a TypeScript type-check and production frontend) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 505.00 Tm (build, plus both Docker images.) Tj ET
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 488.20 Tm (GPT-2 Clone) Tj ET
+BT /F1 7.8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 477.20 Tm (PyTorch - Transformers - BPE - pytest - github.com/PujanCoder/GPT-2-CLONE) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 465.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 465.40 Tm (A from-scratch implementation of the GPT-2 architecture: multi-head causal self-attention, pre-normalised transformer blocks,) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 454.80 Tm (GELU MLPs, tied embeddings, and a working byte-level byte-pair-encoding tokenizer that round-trips text through GPT-2's real) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 444.20 Tm (vocabulary and merge table.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 432.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 432.40 Tm (Vocabulary: 50,257 \(GPT-2 BPE\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 420.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 420.60 Tm (Context: 1,024 \(tokens\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 408.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 408.80 Tm (Layers / heads: 12 / 12 \(768 dim\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 397.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 397.00 Tm (Six pytest modules cover attention, embeddings, the MLP, the transformer block, the tokenizer and an end-to-end) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 386.40 Tm (encode/decode run.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 374.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 374.60 Tm (The tokenizer ships with the genuine 50,257-token vocabulary and the full merge table, so token IDs match GPT-2 rather than) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 364.00 Tm (an approximation.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 352.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 352.20 Tm (The dataset loader produces sliding-window input/target pairs with a configurable stride, ready for next-token training.) Tj ET
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 335.40 Tm (Medical Imaging MLOps) Tj ET
+BT /F1 7.8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 324.40 Tm (PyTorch - MLflow - FastAPI - Prometheus - Grafana - github.com/PujanCoder/Medical-imaging-MLOps) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 312.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 312.60 Tm (An end-to-end MLOps system for chest X-ray classification. ResNet18 transfer learning is only the beginning: the pipeline tracks) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 302.00 Tm (every run in MLflow, serves the model behind FastAPI, watches it with Prometheus, recovers from classified failures) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 291.40 Tm (automatically, and refuses to promote a retrained model that is worse than the baseline.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 279.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 279.60 Tm (Retrain accuracy: 0.867 \(630 test images\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 267.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 267.80 Tm (Weighted F1: 0.830 \(recorded retrain\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 256.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 256.00 Tm (TB recall: 0.236 \(below 0.80 gate\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 244.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 244.20 Tm (The recorded retraining run produced 0.867 accuracy and 0.830 weighted F1, but only 0.236 recall on tuberculosis against a) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 233.60 Tm (0.80 floor - exactly the case the quality gate exists to catch. The candidate was not promoted.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 221.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 221.80 Tm (Nine distinct failure classes are detected and routed to recovery policies, with a validator that verifies recovery instead of) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 211.20 Tm (assuming it.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 199.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 199.40 Tm (Unit and integration tests cover the failure detector, analyser, recovery policies, recovery engine, autopilot flow, quality gate and) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 188.80 Tm (API endpoints.) Tj ET
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 172.00 Tm (Credit Card Fraud Detection - MLOps) Tj ET
+BT /F1 7.8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 161.00 Tm (DVC - MLflow - AWS S3 - Flask - GitHub Actions - github.com/PujanCoder/Credit-Card-Fraud-Detection-_-MLOps) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 149.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 149.20 Tm (A reproducible machine-learning project where data, pipeline stages and model artefacts are versioned, experiments are) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 138.60 Tm (tracked, and the resulting model is served through a small Flask API with a health check.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 126.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 126.80 Tm (DVC stages: 4 \(locked pipeline\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 115.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 115.00 Tm (API routes: 2 \(/health, /predict\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 103.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 103.20 Tm (Remote: S3 \(versioned artefacts\)) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 91.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 91.40 Tm (dvc.lock pins the exact dependency graph, so reproducing a result does not depend on local file state.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 5350 >>
+stream
+BT /F1 7.5 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 796.00 Tm (Pujan Pandey - AI/ML Engineer) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 788.00 m 543.00 788.00 l S
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 772.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 772.00 Tm (The Flask app is importable and testable without starting a server, which keeps CI fast.) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 760.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 760.20 Tm (Environment validation and tox configuration make dependency problems visible before training starts.) Tj ET
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 737.40 Tm (TECHNICAL SKILLS) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 732.40 m 543.00 732.40 l S
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 720.40 Tm (AI & Machine Learning: scikit-learn, HistGradientBoosting, Random Forest / Decision Trees, NumPy, pandas, Model evaluation,) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 709.60 Tm (Feature engineering, Matplotlib / Seaborn) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 696.80 Tm (Deep Learning: PyTorch, Torchvision, Transformer architecture, Multi-head attention, Byte-level BPE tokenization, ResNet18) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 686.00 Tm (transfer learning, Computer vision, NLP) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 673.20 Tm (Programming: Python, TypeScript, JavaScript, SQL, Bash, HTML / CSS) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 660.40 Tm (LLM Engineering & Agents: LangChain, LangGraph, LangSmith, RAG, FAISS, MCP \(Model Context Protocol\), Azure OpenAI, Groq,) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 649.60 Tm (Tavily) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 636.80 Tm (MLOps & Experiment Tracking: MLflow, MLflow Model Registry, DVC, Experiment tracking, Model quality gates, Automated) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 626.00 Tm (retraining, Failure recovery automation, Data drift monitoring, Prometheus, Grafana) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 613.20 Tm (Backend Development: FastAPI, Flask, REST APIs, WebSocket, Pydantic, Uvicorn, SQLite, PostgreSQL, Redis) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 600.40 Tm (Quantum Computing: Qiskit, Quantum circuits, Shor's algorithm, Grover's search, Quantum phase estimation, Quantum) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 589.60 Tm (teleportation, Superdense coding, Quantum Support Vector Machines) Tj ET
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 568.80 Tm (RECOGNITION AND LEADERSHIP) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 563.80 m 543.00 563.80 l S
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 551.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 551.80 Tm (IBM Quantum Qiskit Advocate - IBM Quantum - Current) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 540.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 540.00 Tm (National hackathon - 3rd place - National-level hackathon) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 528.20 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 528.20 Tm (Nepathon hackathon - Nepathon) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 516.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 516.40 Tm (District-level hackathon - District hackathon) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 504.60 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 504.60 Tm (Secretary, IT Club - IT Club) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 492.80 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 492.80 Tm (President, Child Club \(Tole\) - Community child club) Tj ET
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 472.00 Tm (EDUCATION) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 467.00 m 543.00 467.00 l S
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 455.00 Tm (Class 12 - Computer Science) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 442.00 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 442.00 Tm (Computer science fundamentals, Programming) Tj ET
+BT /F2 9.6 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 425.20 Tm (Class 10 - Secondary education) Tj ET
+BT /F1 7.8 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 414.20 Tm (Everest English Boarding School) Tj ET
+BT /F1 8.4 Tf 0.020 0.588 0.412 rg 1 0 0 1 54.00 402.40 Tm (-) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 66.00 402.40 Tm (Secondary education) Tj ET
+BT /F2 8.6 Tf 0.024 0.306 0.231 rg 1 0 0 1 52.00 379.60 Tm (ELSEWHERE) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 374.60 m 543.00 374.60 l S
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 362.60 Tm (GitHub: https://github.com/PujanCoder) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 349.80 Tm (LinkedIn: https://linkedin.com/in/pujan-pandey-0583b1321) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 337.00 Tm (Portfolio: pujanpandey.vercel.app) Tj ET
+BT /F1 8.4 Tf 0.067 0.094 0.153 rg 1 0 0 1 52.00 324.20 Tm (Email: pujanpandey012@gmail.com) Tj ET
+0.898 0.906 0.922 RG 0.5 w 52.00 307.40 m 543.00 307.40 l S
+BT /F1 7.2 Tf 0.42 0.447 0.502 rg 1 0 0 1 52.00 297.40 Tm (Every claim in this CV traces to a public repository at github.com/PujanCoder.) Tj ET
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000000320 00000 n 
+0000000456 00000 n 
+0000010431 00000 n 
+0000010567 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+15969
+%%EOF

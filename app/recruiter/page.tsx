@@ -170,7 +170,8 @@ export default function RecruiterPage() {
               return (
                 <a
                   key={variant}
-                  href={`/api/cv/${variant}`}
+                  href={`/cv/pujan-pandey-cv-${variant}.pdf`}
+                  download
                   className="group flex flex-col rounded-xl border border-line bg-white p-5 transition-colors hover:border-forest/30"
                 >
                   <Download className="h-4 w-4 text-emerald-600" aria-hidden="true" />
@@ -189,7 +190,7 @@ export default function RecruiterPage() {
             })}
           </div>
           <p className="mt-4 text-[11.5px] text-quiet">
-            PDFs are generated on the server from the same data that renders this site, so they cannot
+            PDFs are generated at build time from the same data that renders this site, so they cannot
             drift from the projects below.
           </p>
         </div>
