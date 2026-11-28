@@ -33,6 +33,7 @@ const writing = [...researchPosts, ...blogPosts].map(
 );
 
 const labs = [
+  "/labs/",
   "/labs/network-intrusion-detection/",
   "/labs/medical-imaging-mlops/",
   "/labs/gpt2-clone/",
