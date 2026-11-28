@@ -67,6 +67,7 @@ export const allRoutes: NavItem[] = [
   { href: "/playground", label: "Playground", description: "Machine learning, NLP and data science demos" },
   { href: "/cybersecurity-lab", label: "Cybersecurity lab", description: "Network intrusion detection demonstration" },
   { href: "/quantum-lab", label: "Quantum lab", description: "Statevector simulator, Bloch sphere, Qiskit" },
+  { href: "/labs", label: "Interactive labs", description: "Thresholds, gates and tokenizers" },
   { href: "/labs/network-intrusion-detection", label: "NDR operating point lab", description: "Threshold trade-offs" },
   { href: "/labs/medical-imaging-mlops", label: "Medical retrain gate lab", description: "Quality gate arithmetic" },
   { href: "/labs/gpt2-clone", label: "BPE tokenizer lab", description: "Byte-level merges in the browser" },

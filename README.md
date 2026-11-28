@@ -48,7 +48,6 @@ app/
   activity/                  live GitHub statistics, event log and language mix
   quantum-lab/               browser statevector simulator, Bloch sphere, Qiskit comparisons
   labs/[slug]/               runnable labs: NDR operating point, retrain gate, BPE tokenizer
-  api/assistant/             streaming retrieval endpoint behind the Ask Pujan widget
   sitemap.ts, robots.ts      SEO routes
 components/                  UI primitives, project card + motif, architecture flow, GitHub panel
   assistant/ask-pujan.tsx    floating chat widget (streaming, Escape to close, suggestions)
@@ -96,33 +95,65 @@ npm run gh:snapshot
 
 ## Assistant
 
-`app/api/assistant/route.ts` answers questions from `lib/assistant/knowledge.ts` only — it
-does not free-form hallucinate. If `OPENAI_API_KEY` is set it streams a grounded completion;
-otherwise it streams a retrieval-composed answer and sets `x-assistant-mode: retrieval`.
-Requests are rate limited per IP and capped at eight messages.
+The assistant answers from `lib/assistant/knowledge.ts` and nothing else — retrieval runs in
+the browser (`lib/assistant/answer.ts`), so it works on a static host with no API key, no
+server and no cold start. When a question matches no entry it says so and points at the
+email address rather than guessing.
+
+Adding live generation is a server-side change, not a client one: put a route handler back
+under `app/api/assistant/`, call the provider there with `SYSTEM_PROMPT` + `buildContext()`,
+and keep `OPENAI_API_KEY` in the host's environment. Keys must never reach the browser.
+
+## Deployment
+
+The site is deployed and publicly served from GitHub Pages:
+
+**https://pujancoder.github.io/protfolio/**
+
+### GitHub Pages (current, no server, no credentials)
+
+`.github/workflows/deploy-pages.yml` runs on every push to `main` (and `portfolio-v1` while
+the PR is open): `npm ci` → static export → typecheck, lint, tests → push `out/` to the
+`gh-pages` branch, which Pages serves.
+
+Locally:
 
 ```bash
-OPENAI_API_KEY=      # optional; enables live generation
-OPENAI_BASE_URL=     # optional; OpenAI-compatible endpoint
-OPENAI_MODEL=        # optional; defaults to gpt-4o-mini
+STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/protfolio \
+NEXT_PUBLIC_SITE_URL=https://pujancoder.github.io/protfolio npm run build
+# -> out/
 ```
 
-## Deployment (Vercel)
+`NEXT_PUBLIC_BASE_PATH` must match the repository name, because project sites are served
+from `/<repo>/`. Plain `<a>` elements use `withBase()` from `lib/base-path.ts`; `<Link>`
+handles the prefix itself.
 
-1. Push this repository to GitHub.
-2. In Vercel: **Add New → Project → Import** the repository.
-3. Framework preset **Next.js** is detected automatically; keep the default build command
-   `npm run build` and output directory `.next` (Next handles the static export).
-4. Add `OPENAI_API_KEY` (optional) as an environment variable if the assistant should
-   generate rather than retrieve.
-5. Set `NEXT_PUBLIC_SITE_URL` to the production URL (for example
-   `https://pujanpandey.vercel.app`) so canonical URLs, the sitemap and Open Graph tags point
-   at the right host.
-6. Deploy. Every subsequent push to `main` redeploys.
+### Vercel (optional, keeps server features)
 
-The site uses a server route for the assistant, so it is deployed as a Next.js app rather than
-a static export. Netlify also works — `netlify.toml` includes the official Next.js runtime
-plugin — but Vercel needs no extra configuration.
+Vercel needs a token (or the dashboard) to deploy — this repository has not been linked to a
+Vercel project, so no Vercel URL exists. To deploy there:
+
+```bash
+npx vercel login          # or set VERCEL_TOKEN
+npx vercel link           # link to the GitHub repository
+npx vercel --prod         # build and deploy
+```
+
+Keep the default Next.js preset (`npm run build`, no output-directory override) so redirects
+and security headers from `next.config.ts` stay active. Set `NEXT_PUBLIC_SITE_URL` to the
+Vercel domain. Images are already `unoptimized`, so no image pipeline is required.
+
+### Environment variables
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | recommended | Canonical URLs, sitemap, Open Graph |
+| `NEXT_PUBLIC_BASE_PATH` | Pages only | `/<repo>` prefix for project sites |
+| `STATIC_EXPORT` | Pages only | `1` sets `output: "export"` |
+| `GITHUB_TOKEN` | optional | Higher GitHub API rate limit for the activity page snapshot |
+
+`npm run gh:snapshot` regenerates `lib/github-snapshot.json`; the activity page falls back to
+it (and says so) when the public API is rate limited.
 
 ## Accessibility and performance
 
